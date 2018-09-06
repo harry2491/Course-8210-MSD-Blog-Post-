@@ -26,7 +26,7 @@ SECRET_KEY = 'sfuw2r(ikwwxk1nwyqaevvg11lax2ffu=-!7^3$=ja8d!up+cr'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -43,7 +43,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware'
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -79,11 +79,10 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        #'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        'NAME': 'd2qnleran2ac09',
-        'USER' : 'cwlnnbfvfwukzw',
-        'PASSWORD': '3b260a22bfac90465be50f0262141dbdb66a873f6ed30e2dcc37e6fd919067b0',
-        'HOST': 'postgres://cwlnnbfvfwukzw:3b260a22bfac90465be50f0262141dbdb66a873f6ed30e2dcc37e6fd919067b0@ec2-107-21-233-72.compute-1.amazonaws.com:5432/d2qnleran2ac09',
+        'NAME': 'd6u0rlbjdg8g2u',
+        'USER': 'oakqlcwhyqhlvm',
+        'PASSWORD': '021ffab59df5558b2c4b9e6c0ae04c6a6672dbbe28ece219594b01751000dcb5',
+        'HOST': 'postgres://oakqlcwhyqhlvm:021ffab59df5558b2c4b9e6c0ae04c6a6672dbbe28ece219594b01751000dcb5@ec2-50-16-196-138.compute-1.amazonaws.com:5432/d6u0rlbjdg8g2u',
         'PORT': '5432',
     }
 }
